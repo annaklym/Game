@@ -1,0 +1,51 @@
+#scoreboard {
+  height: 40px;
+  margin: 10px 200px;
+  }
+
+#start,
+#stop {
+  width: 80px;
+  height: 40px;
+  background: red;
+  border: none;
+  color: white;
+}
+
+#area {
+  width: 640px;
+  height: 480px;
+  background: rgb(255, 255, 0);
+}
+
+@keyframes animation {
+  from {
+    top: 60px;
+  }
+  to {
+    top: 500px;
+  }
+}
+
+.item {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  animation-name: animation;
+  animation-delay: 0.1s;
+  animation-timing-function: linear;
+}
+
+#sizeError {
+  display: none;
+}
+
+@media screen and (max-width: 640px),
+(max-height: 560px) {
+  #sizeError {
+    display: block;
+  }
+  #game {
+    display: none;
+  }
+}
